@@ -24,7 +24,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   backdrop-filter: blur(4px);
@@ -37,32 +37,11 @@ header {
   text-shadow: 0 0 10px var(--glow);
 }
 
-nav a {
-  margin-left: 2rem;
-  text-decoration: none;
-  color: var(--fg);
-  position: relative;
-  transition: 0.3s;
-}
-
-nav a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  background: var(--accent);
-  width: 0%;
-  transition: width 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 50vh;
   text-align: center;
   padding: 0 2rem;
 }
@@ -72,6 +51,35 @@ nav a:hover::after {
   color: var(--fg);
   text-shadow: 0 0 10px var(--glow);
   animation: flicker 2s infinite alternate;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--fg);
+  position: relative;
+  transition: 0.3s;
+}
+
+.main-nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
 }
 
 footer {
@@ -108,4 +116,3 @@ footer {
   50% { opacity: 0.4; text-shadow: 0 0 20px var(--soft-glow); }
   70% { opacity: 1; }
 }
-
