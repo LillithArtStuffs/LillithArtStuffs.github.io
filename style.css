@@ -116,3 +116,14 @@ footer {
   50% { opacity: 0.4; text-shadow: 0 0 20px var(--soft-glow); }
   70% { opacity: 1; }
 }
+.main-nav a.active {
+  color: var(--glow);
+  font-weight: 700;
+  text-shadow: 0 0 10px var(--glow);
+}
+
+.main-nav a.active::after {
+  width: 100%;
+  background: var(--glow);
+}
+
